@@ -158,7 +158,7 @@ def comment_info(videoids):
 
 #inserting the data to monogodb
 
-client =pymongo.MongoClient("mongodb://localhost:27017/")
+client =MongoClient("mongodb://localhost:27017/")
 db = client["YouTube_details"]
 
 def channel_data_details(Channel_id):
