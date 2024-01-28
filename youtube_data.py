@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 
 def api_connect():
-    api_key = 'AIzaSyDCnoMA9QD-6c_H5riUKWggU17AFnGkPkM'
+    api_key = 'Paste the GOOGLE API KEY get it from GOOGLE API COUNCLE'
 
     api_service_name = "youtube"
     api_version = "v3"
@@ -16,7 +16,7 @@ def api_connect():
 youtube=api_connect()
 
 def channel_info(channel_id):
-    api_key = 'AIzaSyDCnoMA9QD-6c_H5riUKWggU17AFnGkPkM'
+    api_key = 'Paste the GOOGLE API KEY get it from GOOGLE API COUNCLE'
     api_service_name = "youtube"
     api_version = "v3"
     youtube = build(api_service_name, api_version, developerKey=api_key)
@@ -36,7 +36,7 @@ def channel_info(channel_id):
 
 #get playlist details from the channel
 def playlist_info(channel_ids):
-    api_key = 'AIzaSyDCnoMA9QD-6c_H5riUKWggU17AFnGkPkM'
+    api_key = 'Paste the GOOGLE API KEY get it from GOOGLE API COUNCLE'
     api_service_name = "youtube"
     api_version = "v3"
     youtube = build(api_service_name, api_version, developerKey=api_key)
@@ -175,7 +175,7 @@ def channel_data_details(Channel_id):
 
 #mysql to python connect
 
-#myconnection = pymysql.connect(host='localhost',user='root',passwd='Thanish@234')
+#myconnection = pymysql.connect(host='localhost',user='root',passwd='passward')
 #cur = myconnection.cursor()
 
 # try:
@@ -183,7 +183,7 @@ def channel_data_details(Channel_id):
 # except:
 #     print("Already database created on this name")
 
-myconnection = pymysql.connect(host='localhost',user='root',passwd='Thanish@234',database = 'youtube_data')
+myconnection = pymysql.connect(host='localhost',user='root',passwd='passward',database = 'youtube_data')
 cur = myconnection.cursor()
 
 def channels_sql_table():
